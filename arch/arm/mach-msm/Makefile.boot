@@ -213,9 +213,11 @@ else
     dtb-$(CONFIG_SEC_KACTIVE_PROJECT)	+= msm8974pro-ac-sec-kactivelte-r01.dtb
 endif
 endif
+ifeq ($(CONFIG_SEC_KSPORTS_PROJECT),y)
 	dtb-$(CONFIG_SEC_KSPORTS_PROJECT)	+= msm8974pro-ac-sec-ksports-r00.dtb
 	dtb-$(CONFIG_SEC_KSPORTS_PROJECT)	+= msm8974pro-ac-sec-ksports-r01.dtb
 	dtb-$(CONFIG_SEC_KSPORTS_PROJECT)	+= msm8974pro-ac-sec-ksports-r03.dtb
+endif
 
 # APQ8084
    zreladdr-$(CONFIG_ARCH_APQ8084)	:= 0x00008000
